@@ -14,8 +14,10 @@
         <div class="container">
             <div class="land">
                 <h3>حلول النشر</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum praesentium facilis mollitia impedit illo labore, laboriosam, 
-                    dolorum itaque fugiat consequuntur porro ex perspiciatis soluta reprehenderit inventore ullam voluptas illum neque.</p>
+                <p>
+                    خدمات اعلانية بطرق مختللفة وجودة عالية نسعي من خلالها لأن نكون لنا بصمة مختلفة تميزنا عن منافسينا 
+                    ذلك عن طريق الدقة في الاداء والابتكار والتفوق في العمليات التشغيلية والادارية لنصل الي نتائج ترضي عملائنا وتتوافق مع متطلباتهم 
+                </p>
                     <div class="row">
                         <div class="col">
                         <div class="card" style="width: 18rem;">
@@ -29,11 +31,12 @@
                         <div class="col">
                         <div class="card" style="width: 18rem;">
                             <div class="card-body">
-                                <h5 class="card-title">قسم التصميم</h5>
-                                <a href="./php/design.php" class="btn mt-3  btn-primary">اضغط هنا</a>
+                                <h5 class="card-title">قسم المالية  </h5>
+                                <a href="./php/account.php" class="btn mt-3  btn-primary">اضغط هنا</a>
                             </div>
                             </div>
                         </div>
+                     
 
 
                     </div>
@@ -48,11 +51,12 @@
                             </div>
                         </div>
 
+                           
                         <div class="col">
                         <div class="card" style="width: 18rem;">
                             <div class="card-body">
-                                <h5 class="card-title">قسم </h5>
-                                <a href="#" class="btn mt-3  btn-primary">اضغط هنا</a>
+                                <h5 class="card-title">قسم التصميم</h5>
+                                <a href="./php/design.php" class="btn mt-3  btn-primary">اضغط هنا</a>
                             </div>
                             </div>
                         </div>

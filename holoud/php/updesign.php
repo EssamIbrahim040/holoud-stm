@@ -17,9 +17,9 @@
     <?php if (isset($_GET['error'])): ?>
 		<p><?php echo $_GET['error']; ?></p>
 	<?php endif ?>
-     <form action="upload.php"  method="post" enctype="multipart/form-data">
-           <input class="form-control" type="file"   name="file"> 
+     <form action="upscript.php"  method="post" enctype="multipart/form-data">
+           <input class="form-control" type="file"   name="my_image" id="fileToUpload"> 
            <input class="btn btn-primary mt-3" type="submit"  name="submit" value="Upload">
+           <a href="../index.php">&#8592;</a>
      </form>
 </div>
-

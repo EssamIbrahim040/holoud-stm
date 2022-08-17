@@ -17,28 +17,39 @@
    
 
      <a href="../index.php">&#8592;</a>
-
+<style>
+    	.alb {
+			width: 200px;
+			height: 200px;
+			padding: 5px;
+		}
+		.alb img {
+			width: 100%;
+			height: 100%;
+		}
+    </style>
      
    
      <?php 
 
      
                 // conect with database
-                $host = 'localhost';
-                $user = 'root';
-                $password = '';
+                $host ='localhost';
+                $user ='root';
+                $password ='';
                 $dbName = 'holoud';
-        
+           
               $conn =   mysqli_connect($host, $user, $password, $dbName);
 
-              $query = "SELECT * FROM images ORDER BY id DESC";
-           $result = mysqli_query($conn,$query);
+              $sql = "SELECT * FROM file_url ORDER BY id DESC";
+              $result = mysqli_query($conn , $sql);
+
 
           if (mysqli_num_rows($result) > 0) {
           	while ($images = mysqli_fetch_assoc($result)) {  ?>
              
              <div class="alb">
-             	<img src="uploads/<?=$images['image_url']?>">
+             	<img src="uploads/<?=$images['file']?>">
              </div>
           		
     <?php } }?>

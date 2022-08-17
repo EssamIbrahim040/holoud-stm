@@ -98,7 +98,7 @@
  
        $conn =   mysqli_connect($host, $user, $password, $dbName);
    
-     $query = "SELECT * FROM data";
+     $query = "SELECT * FROM data  ";
      $result = mysqli_query($conn,$query);
 
            if($result){
@@ -112,11 +112,12 @@
             <td>$<?php echo $row['detail']; ?></td>
             <td>
            
-               <a href='design.php?action=remove&id=".$value['id']."' class="delete-btn" > <i class="fas fa-trash"></i> Delete </a>
-               <!-- <a href="design.php?edit=<?php  ?>" class="option-btn"> <i class="fas fa-edit"></i> update </a> -->
+               <a href="delete.php" name="delete" class="delete-btn" > <i class="fas fa-trash"></i> Remove </a>
+               <!-- <a href="design.php?edit= class="option-btn"> <i class="fas fa-edit"></i> update </a> -->
             </td>
          </tr>
-        
+                
+                
          <?php
              };  
             }else{
@@ -127,16 +128,8 @@
    </table>
 
 </section>
-<?php
-    if ($_GET['action'] == "remove"){
-        foreach($_SESSION['data'] as $key => $value){
-            if($value['id'] == $_GET['id']){
-                unset($_SESSION['data'][$key]);
-            }
-        }
-    }
-?>
 
+   
 <style>
     .btn {
         width:300px;

@@ -7,13 +7,25 @@ $password = '';
 $dbName = 'holoud';
 
 $conn =   mysqli_connect($host, $user, $password, $dbName);
-$sql = "DELETE FROM data WHERE id=1";
 
-if (mysqli_query($conn, $sql)) {
-  echo "Record deleted successfully";
-} else {
-  echo "Error deleting record: " . mysqli_error($conn);
+
+if($_GET){
+  if(isset($_GET['delete'])){
+      delete();
+  }
 }
 
-mysqli_close($conn);
+  function delete()
+  {
+    $delete1 =("DELETE FROM `usrdata` WHERE id = '3'");
+      $result = mysqli_query($conn,$delete1) or dieid(mysqli_error());
+      
+echo "record deleted";
+ 
+ 
+
+  }
+
+
+
 ?>

@@ -11,17 +11,17 @@
 </head>
 <body>
 <div class="container">
-    <form action="salers.php" class="mt-4"  method="post">
+    <form action="code.php" class="mt-4"  method="post">
          <h2 class="text-center">قسم المالية</h2> 
         
          <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">اسم مدخل البيانات</label>
-            <input class="form-control" type="text" name="dataname" placeholder="ادخل اسم الموظف"><br>
+            <input class="form-control" type="text" name="name" placeholder="ادخل اسم الموظف"><br>
         </div>
 
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">اسم العميل</label>
-            <input class="form-control" type="text" name="name" placeholder="ادخل اسم العميل"><br>
+            <input class="form-control" type="text" name="dataname" placeholder="ادخل اسم العميل"><br>
         </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label"> التصميم</label>
@@ -50,30 +50,30 @@
 </form>
                 
     <?php 
-                 // connect with database 
-     $host ='localhost';
-     $user ='root';
-     $password ='';
-     $dbName = 'holoud';
+//                  // connect with database 
+//      $host ='localhost';
+//      $user ='root';
+//      $password ='';
+//      $dbName = 'holoud';
 
-   $conn =   mysqli_connect($host, $user, $password, $dbName);
+//    $conn =   mysqli_connect($host, $user, $password, $dbName);
 
-   $name = $_POST['name'];
-   $dName = $_POST['dataname'];
-   $dType = $_POST['type'];
-   $detail = $_POST['detail'];
-   $price = $_POST['price'];
-   $priceup = $_POST['priceup'];
-   $priceresid = $_POST['priceresid'];
-   $dbutton = $_POST['button'];
+//    $name = $_POST['name'];
+//    $dName = $_POST['dataname'];
+//    $dType = $_POST['type'];
+//    $detail = $_POST['detail'];
+//    $price = $_POST['price'];
+//    $priceup = $_POST['priceup'];
+//    $priceresid = $_POST['priceresid'];
+//    $dbutton = $_POST['button'];
 
-   if($dbutton){
-    $query = "INSERT INTO account(name,dataname,type,detail,price,priceup,priceresid)VALUE('$dName','$dType','$detail','$price','$priceup','$priceresid','$name')";
-    $result = mysqli_query($conn,$query);
-    header("location: salers.php");
-} else {
-    echo " <p>iTs Not Done </p>";
-}
+//    if($dbutton){
+//     $query = "INSERT INTO account(name,dataname,type,detail,price,priceup,priceresid)VALUE('$dName','$dType','$detail','$price','$priceup','$priceresid','$name')";
+//     $result = mysqli_query($conn,$query);
+//     header("location: salers.php");
+// } else {
+//     echo " <p>iTs Not Done </p>";
+// }
 
     ?>
     <style>

@@ -120,7 +120,7 @@
             <td><?php echo $row['priceresid']; ?></td>
             <td>
            
-               <a href="delete.php" name="delete" class="delete-btn" > <i class="fas fa-trash"></i> Remove </a>
+               <a href="delete.php" name="delete_account" class="delete-btn" value="<?=$account['id'];?>"> <i class="fas fa-trash"></i> Remove </a>
                <!-- <a href="design.php?edit= class="option-btn"> <i class="fas fa-edit"></i> update </a> -->
             </td>
          </tr>
@@ -137,6 +137,7 @@
 
 </section>
 
+<<a href="sale.php" class="btn btn-primry">متابعة</a>
    
 <style>
     .btn {

@@ -108,8 +108,8 @@
          <tr>
             <td><?php echo $row['id']; ?></td>
             <td><?php echo $row['name']; ?></td>
-            <td>$<?php echo $row['type']; ?></td>
-            <td>$<?php echo $row['detail']; ?></td>
+            <td><?php echo $row['type']; ?></td>
+            <td><?php echo $row['detail']; ?></td>
             <td>
            
                <a href="delete.php" name="delete" class="delete-btn" > <i class="fas fa-trash"></i> Remove </a>

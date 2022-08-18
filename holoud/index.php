@@ -10,6 +10,11 @@
     <title>Holoud</title>
 </head>
 <body>
+    <style>
+        card {
+            height: 20px;
+        }
+        </style>
    
         <div class="container">
             <div class="land">
@@ -20,7 +25,7 @@
                 </p>
                     <div class="row">
                         <div class="col">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card" style="width: 18rem ; height :24vh;">
                             <div class="card-body">
                                 <h5 class="card-title">قسم المبيعات</h5>
                                 <a href="./php/sale.php" class="btn mt-3 btn-primary">اضغط هنا</a>
@@ -29,7 +34,7 @@
                         </div>
 
                         <div class="col">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card" style="width: 18rem; height :24vh;">
                             <div class="card-body">
                                 <h5 class="card-title">قسم المالية  </h5>
                                 <a href="./php/account.php" class="btn mt-3  btn-primary">اضغط هنا</a>
@@ -43,7 +48,7 @@
 
                     <div class="row">
                         <div class="col">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card" style="width: 18rem; height :24vh;">
                             <div class="card-body">
                                 <h5 class="card-title">قسم المعمل</h5>
                                 <a href="./php/lab.php" class="btn mt-3  btn-primary">اضغط هنا</a>
@@ -53,7 +58,7 @@
 
                            
                         <div class="col">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card" style="width: 18rem; height :24vh;">
                             <div class="card-body">
                                 <h5 class="card-title">قسم التصميم</h5>
                                 <a href="./php/design.php" class="btn mt-3  btn-primary">اضغط هنا</a>

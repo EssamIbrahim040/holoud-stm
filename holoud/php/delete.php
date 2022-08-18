@@ -1,31 +1,26 @@
 <?php
+session_start();
+require 'db_conn.php';
 
+if(isset($_POST['delete_account']))
+{
+    $account_id = mysqli_real_escape_string($conn, $_POST['delete_account']);
 
-$host = 'localhost';
-$user = 'root';
-$password = '';
-$dbName = 'holoud';
+    $query = "DELETE FROM account WHERE id='$account_id' ";
+    $query_run = mysqli_query($conn, $query);
 
-$conn =   mysqli_connect($host, $user, $password, $dbName);
-
-
-if($_GET){
-  if(isset($_GET['delete'])){
-      delete();
-  }
+    if($query_run)
+    {
+        $_SESSION['message'] = "Acount Deleted Successfully";
+        header("Location: salers.php");
+       
+    }
+    else
+    {
+        $_SESSION['message'] = "Acount Not Deleted";
+        header("Location: salers.php");
+       
+    }
 }
-
-  function delete()
-  {
-    $delete1 =("DELETE FROM `usrdata` WHERE id = '3'");
-      $result = mysqli_query($conn,$delete1) or dieid(mysqli_error());
-      
-echo "record deleted";
- 
- 
-
-  }
-
-
 
 ?>

@@ -47,7 +47,7 @@
         </div>
                 <input class="btn btn-primary" type="submit" name="button" vaule="Send">
 
-
+</form>
                 
     <?php 
                  // connect with database 
@@ -68,7 +68,7 @@
    $dbutton = $_POST['button'];
 
    if($dbutton){
-    $query = "INSERT INTO account(name,dataname,type,detail,price,priceup,priceresid)VALUE('$dName','$name','$dType','$detail','$price','$priceup','$priceresid')";
+    $query = "INSERT INTO account(name,dataname,type,detail,price,priceup,priceresid)VALUE('$dName','$dType','$detail','$price','$priceup','$priceresid','$name')";
     $result = mysqli_query($conn,$query);
     header("location: salers.php");
 } else {
